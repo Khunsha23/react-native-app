@@ -1,29 +1,29 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View,Image } from 'react-native';
 import CustomList from './components/listComponent';
-import Icon from 'react-native-vector-icons/FontAwesome';
+
 
 
 export default function App() {
   const [ListData1, setListData1] = useState([
-    { name: 'Burger', imageUri: 'https://www.shutterstock.com/image-photo/classic-hamburger-stock-photo-isolated-600nw-2282033179.jpg' },
-    { name: 'Kebab', imageUri: 'https://www.shutterstock.com/image-photo/classic-hamburger-stock-photo-isolated-600nw-2282033179.jpg' },
-    { name: 'Burger', imageUri: 'https://www.shutterstock.com/image-photo/classic-hamburger-stock-photo-isolated-600nw-2282033179.jpg' },
-    { name: 'Kebab', imageUri: 'https://www.shutterstock.com/image-photo/classic-hamburger-stock-photo-isolated-600nw-2282033179.jpg' },
+    { name: 'Burger', img: require("./assets/burger1.webp")},
+    { name: 'Kebab', img: require("./assets/kebab.jpg") },
+    { name: 'Burger', img:require("./assets/burger1.webp") },
+    { name: 'Kebab', img: require("./assets/kebab.jpg")}
   ]);
 
   const [ListData2, setListData2] = useState([
-    { name: 'Monsterra Patty', imageUri: 'https://www.noracooks.com/wp-content/uploads/2023/04/veggie-burgers-1-2.jpg' },
-    { name: 'Hukl Burger', imageUri: 'https://www.noracooks.com/wp-content/uploads/2023/04/veggie-burgers-1-2.jpg' },
-    { name: 'Monsterra Patty', imageUri: 'https://www.noracooks.com/wp-content/uploads/2023/04/veggie-burgers-1-2.jpg' },
-    { name: 'Hukl Burger', imageUri: 'https://www.noracooks.com/wp-content/uploads/2023/04/veggie-burgers-1-2.jpg' },
+    { name: 'Monsterra Patty', img: require("./assets/burger2.webp") },
+    { name: 'Hukl Burger', img: require("./assets/burger2.webp") },
+    { name: 'Monsterra Patty', img: require("./assets/burger2.webp") },
+    { name: 'Hukl Burger', img: require("./assets/burger2.webp") },
   ]);
 
   const [ListData3, setListData3] = useState([
-    { name: 'Vege Burger', imageUri: 'https://healthfulblondie.com/wp-content/uploads/2021/06/best-no-bean-veggie-burgers-TN.jpg' },
-    { name: 'Vege Burger', imageUri: 'https://healthfulblondie.com/wp-content/uploads/2021/06/best-no-bean-veggie-burgers-TN.jpg' },
-    { name: 'Vege Burger', imageUri: 'https://healthfulblondie.com/wp-content/uploads/2021/06/best-no-bean-veggie-burgers-TN.jpg' },
-    { name: 'Vege Burger', imageUri: 'https://healthfulblondie.com/wp-content/uploads/2021/06/best-no-bean-veggie-burgers-TN.jpg' },
+    { name: 'Vege Burger', img: require("./assets/burger3.jpg") },
+    { name: 'Vege Burger', img: require("./assets/burger3.jpg") },
+    { name: 'Vege Burger', img: require("./assets/burger3.jpg") },
+    { name: 'Vege Burger', img: require("./assets/burger3.jpg") },
   ]);
 
   return (

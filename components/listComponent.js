@@ -8,7 +8,7 @@ export default function CustomList({ data, horizontal }) {
       data={data}
       renderItem={({ item }) => (
         <View style={styles.itemContainer}>
-          <Image source={{ uri: item.imageUri }} style={styles.image} />
+          <Image source={item.img} style={styles.image} />
           <Text style={styles.item}>{item.name}</Text>
         </View>
       )}
@@ -34,9 +34,5 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingVertical: 10,
     paddingHorizontal: 10,
-  },
-  popularFood:
-  {
-    
   }
 });
